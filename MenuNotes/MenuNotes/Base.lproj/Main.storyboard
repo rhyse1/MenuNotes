@@ -8,7 +8,7 @@
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MenuBarTest" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MenuNotes" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
@@ -683,26 +683,26 @@
         <!--NotesViewController-->
         <scene sceneID="Fpi-2H-nqE">
             <objects>
-                <viewController title="NotesViewController" storyboardIdentifier="NotesViewController" showSeguePresentationStyle="single" id="A2I-Yg-DYy" customClass="NotesViewController" customModule="MenuBarTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="NotesViewController" storyboardIdentifier="NotesViewController" showSeguePresentationStyle="single" id="A2I-Yg-DYy" customClass="NotesViewController" customModule="MenuNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="iun-OM-hzL">
-                        <rect key="frame" x="0.0" y="0.0" width="359" height="304"/>
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="323"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mXk-Oo-eKZ">
-                                <rect key="frame" x="128" y="277" width="102" height="21"/>
+                                <rect key="frame" x="128" y="296" width="102" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="border" alignment="center" title="TO-DO" drawsBackground="YES" usesSingleLineMode="YES" id="U9S-07-7XC">
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocG-iw-Wm0">
-                                <rect key="frame" x="20" y="14" width="319" height="108"/>
+                                <rect key="frame" x="20" y="35" width="319" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="fv4-h0-G3Z">
                                     <rect key="frame" x="0.0" y="0.0" width="319" height="108"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="4jv-QA-IgF">
                                             <rect key="frame" x="0.0" y="0.0" width="319" height="108"/>
@@ -725,11 +725,11 @@
                                 </scroller>
                             </scrollView>
                             <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgI-pg-wjK">
-                                <rect key="frame" x="20" y="161" width="319" height="108"/>
+                                <rect key="frame" x="20" y="180" width="319" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="fuf-sf-bDD">
                                     <rect key="frame" x="0.0" y="0.0" width="319" height="108"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="guL-OE-bgd">
                                             <rect key="frame" x="0.0" y="0.0" width="319" height="108"/>
@@ -752,20 +752,31 @@
                                 </scroller>
                             </scrollView>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9AI-Wy-i9U">
-                                <rect key="frame" x="128" y="130" width="102" height="21"/>
+                                <rect key="frame" x="128" y="151" width="102" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="border" alignment="center" title="Other" drawsBackground="YES" usesSingleLineMode="YES" id="0Md-e8-kDg">
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7l-Tu-vSf">
+                                <rect key="frame" x="140" y="0.0" width="79" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sWG-Yk-u7S">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="quitButton" destination="c7l-Tu-vSf" id="7vQ-bE-D8Z"/>
+                    </connections>
                 </viewController>
                 <customObject id="HQR-nL-LzG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="211"/>
+            <point key="canvasLocation" x="74.5" y="220.5"/>
         </scene>
     </scenes>
 </document>

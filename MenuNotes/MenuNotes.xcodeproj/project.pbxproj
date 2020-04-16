@@ -31,9 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		882F34A72448B74D001944C8 /* MenuNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MenuNotesTests.xctest; path = /Users/rhysevans/Documents/SwiftMenuBarTest/MenuBarTest/build/Debug/MenuNotesTests.xctest; sourceTree = "<absolute>"; };
-		882F34A82448B74D001944C8 /* MenuNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MenuNotesUITests.xctest; path = /Users/rhysevans/Documents/SwiftMenuBarTest/MenuBarTest/build/Debug/MenuNotesUITests.xctest; sourceTree = "<absolute>"; };
-		882F34A92448B7A4001944C8 /* MenuNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MenuNotes.app; path = /Users/rhysevans/Documents/SwiftMenuBarTest/MenuBarTest/build/Debug/MenuNotes.app; sourceTree = "<absolute>"; };
+		882F34AB2448B907001944C8 /* MenuNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MenuNotesTests.xctest; path = /Users/rhysevans/Documents/SwiftMenuBarTest/MenuNotes/build/Debug/MenuNotesTests.xctest; sourceTree = "<absolute>"; };
+		882F34AC2448B907001944C8 /* MenuNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MenuNotesUITests.xctest; path = /Users/rhysevans/Documents/SwiftMenuBarTest/MenuNotes/build/Debug/MenuNotesUITests.xctest; sourceTree = "<absolute>"; };
+		882F34AD2448B9C1001944C8 /* MenuNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A56086244779C10050E1C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A5608A244779C20050E1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88A5608D244779C20050E1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				88A56085244779C10050E1C6 /* MenuNotes */,
+				882F34AD2448B9C1001944C8 /* MenuNotes.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +105,7 @@
 			);
 			name = MenuNotes;
 			productName = MenuBarTest;
-			productReference = 882F34A92448B7A4001944C8 /* MenuNotes.app */;
+			productReference = 882F34AD2448B9C1001944C8 /* MenuNotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 		88A56094244779C20050E1C6 /* MenuNotesTests */ = {
@@ -122,7 +123,7 @@
 			);
 			name = MenuNotesTests;
 			productName = MenuBarTestTests;
-			productReference = 882F34A72448B74D001944C8 /* MenuNotesTests.xctest */;
+			productReference = 882F34AB2448B907001944C8 /* MenuNotesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		88A5609F244779C30050E1C6 /* MenuNotesUITests */ = {
@@ -140,7 +141,7 @@
 			);
 			name = MenuNotesUITests;
 			productName = MenuBarTestUITests;
-			productReference = 882F34A82448B74D001944C8 /* MenuNotesUITests.xctest */;
+			productReference = 882F34AC2448B907001944C8 /* MenuNotesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -380,7 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MenuNotes/MenuBarTest.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MenuNotes/MenuNotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MenuNotes/Info.plist;
@@ -398,7 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MenuNotes/MenuBarTest.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MenuNotes/MenuNotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MenuNotes/Info.plist;

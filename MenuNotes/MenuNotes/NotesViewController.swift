@@ -1,6 +1,7 @@
 import Cocoa
 
 class NotesViewController: NSViewController {
+    @IBOutlet weak var quitButton: NSButton!
     
     class func loadFromNib() -> NotesViewController{
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
@@ -9,7 +10,12 @@ class NotesViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        quitButton.action = #selector(self.quitApplication)
+    }
+    
+    @objc func quitApplication()
+    {
+        NSApplication.shared.terminate(self)
     }
     
 }
