@@ -8,7 +8,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     //let menu = NSMenu()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
         popover.behavior = NSPopover.Behavior.transient; // Hide when focus is lost
         
         if let button = statusItem.button{
@@ -16,7 +15,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = #selector(toggleWeather(sender:))
         }
         
-        // Show menu
         popover.contentViewController = NotesViewController.loadFromNib()
         //menu.addItem(NSMenuItem(title: "Show Weather", action: #selector(showWeather(sender:)), keyEquivalent: "S"))
         //menu.addItem(NSMenuItem.separator())

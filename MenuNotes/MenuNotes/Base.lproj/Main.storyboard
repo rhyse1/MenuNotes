@@ -691,7 +691,7 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mXk-Oo-eKZ">
                                 <rect key="frame" x="128" y="296" width="102" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="border" alignment="center" title="TO-DO" drawsBackground="YES" usesSingleLineMode="YES" id="U9S-07-7XC">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="border" alignment="center" title="Quick Notes" drawsBackground="YES" usesSingleLineMode="YES" id="U9S-07-7XC">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -731,7 +731,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="319" height="108"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="guL-OE-bgd">
+                                        <textView importsGraphics="NO" verticallyResizable="YES" continuousSpellChecking="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="guL-OE-bgd">
                                             <rect key="frame" x="0.0" y="0.0" width="319" height="108"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -771,7 +771,9 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="firstTextBox" destination="KgI-pg-wjK" id="mdu-PT-IZG"/>
                         <outlet property="quitButton" destination="c7l-Tu-vSf" id="7vQ-bE-D8Z"/>
+                        <outlet property="secondTextBox" destination="ocG-iw-Wm0" id="XDG-AG-etJ"/>
                     </connections>
                 </viewController>
                 <customObject id="HQR-nL-LzG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
