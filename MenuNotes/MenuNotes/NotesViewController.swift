@@ -26,15 +26,12 @@ class NotesViewController: NSViewController {
     }
     
     func CreateDirectory() {
-        let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        let docURL = URL(string: documentsDirectory)!
-        let dataPath = docURL.appendingPathComponent("MenuNotes")
+        let docURL = URL(string: NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])
+        let dataPath = docURL!.appendingPathComponent("MenuNotes")
         if !FileManager.default.fileExists(atPath: dataPath.absoluteString) {
             do {
                 try FileManager.default.createDirectory(atPath: dataPath.absoluteString, withIntermediateDirectories: true, attributes: nil)
-            } catch {
-                print(error.localizedDescription);
-            }
+            } catch {}
         }
     }
 
