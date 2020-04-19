@@ -11,7 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.behavior = NSPopover.Behavior.transient; // Hide when focus is lost
         
         if let button = statusItem.button{
-            button.image = NSImage(named: "star")
+            button.image = NSImage(named: "image")
             button.action = #selector(toggleWeather(sender:))
         }
         
