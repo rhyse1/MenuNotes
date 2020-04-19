@@ -35,7 +35,7 @@ class NotesViewController: NSViewController {
         }
     }
 
-    func ReadData(fileName: String) -> String {
+    func ReadData(fileName: String) -> String { // Eventually return array of data
         do{
             return try String(contentsOf: (FOLDER_URL?.appendingPathComponent(fileName))!, encoding: .utf8)
         }
@@ -45,22 +45,12 @@ class NotesViewController: NSViewController {
     }
     
     func SaveData() {
-        WriteData(fileName: "notes.txt")
-        WriteData(fileName: "other.txt")
-    }
-    
-    func WriteData(fileName: String) { // Eventually return array of data
-        var scrollView:NSScrollView = firstTextBox
-        
-        if fileName != "notes.txt"{
-            scrollView = secondTextBox;
-        }
-        
-        let myTextView: NSTextView = scrollView.documentView! as! NSTextView
-        let text:String = myTextView.string
+        let notesText = (firstTextBox.documentView! as! NSTextView).string
+        let otherText = (secondTextBox.documentView! as! NSTextView).string
 
         do{
-            try text.write(to: (FOLDER_URL?.appendingPathComponent(fileName))!, atomically: false, encoding: .utf8)
+            try notesText.write(to: (FOLDER_URL?.appendingPathComponent("notes.txt"))!, atomically: false, encoding: .utf8)
+            try otherText.write(to: (FOLDER_URL?.appendingPathComponent("other.txt"))!, atomically: false, encoding: .utf8)
         }
         catch {
             return
